@@ -29,7 +29,7 @@ resource "aws_subnet" "private_subnet" {
         Name="Group 13 Private Subnet "
     }
 }
-resource "aws_default_security_group" "default_sc" {
+resource "aws_default_security_group" "default_sg" {
    vpc_id = aws_vpc.my_vpc.id
 
   
