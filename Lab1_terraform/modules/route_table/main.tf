@@ -19,7 +19,7 @@ resource "aws_route_table" "private_rt" {
     nat_gateway_id = var.nat_gateway_id
   }
 tags = {
-        Name = "Route Table for the Private Subnet"
+        Name = "Private Subnet Route Table"
     }
 }
 resource "aws_route_table_association" "rt_associate_private_subnet" {

@@ -47,6 +47,6 @@ resource "aws_default_security_group" "default_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "Default Security Group"
+    Name = "VPC Default Security Group"
   }
 }
