@@ -19,9 +19,9 @@ output "private_instance_id" {
 }
 
 output "public_security_group_id" {
-  value       = module.security_groups.public_sg
+  value       = module.security_groups.public_sg_id
 }
 
 output "private_security_group_id" {
-  value       = module.security_groups.private_sg
+  value       = module.security_groups.private_sg_id
 }

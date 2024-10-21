@@ -31,8 +31,8 @@ module "ec2" {
   source           = "./modules/ec2"
   ami              = "ami-087c17d1fe0178315"
   instance_type    = "t2.micro"
-  public_sg     = module.security_groups.public_sg
-  private_sg    = module.security_groups.private_sg
+  public_sg     = module.security_groups.public_sg_id
+  private_sg    = module.security_groups.private_sg_id
   public_subnet_id = module.vpc.public_subnet_id
   private_subnet_id = module.vpc.private_subnet_id
 }
