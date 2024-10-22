@@ -1,6 +1,6 @@
 #EC2
 run "create_public_ec2" {
-    command = test
+    command = apply
     
     assert {
         condition = module.public_instance.id != ""
