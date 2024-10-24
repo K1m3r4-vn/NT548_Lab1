@@ -15,7 +15,10 @@ https://developer.hashicorp.com/terraform/install
 
 Cách lấy access key và private key của AWS : https://www.msp360.com/resources/blog/how-to-find-your-aws-access-key-id-and-secret-access-key/
 
-4. Sử dụng 3 câu lệnh terraform sau để triển khai hạ tầng AWS
+4. Thực hiện tạo 1 key pair mang tên "group13_keypair"
+Cách tạo key pair : https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html
+
+5. Sử dụng 3 câu lệnh terraform sau để triển khai hạ tầng AWS
 
 ```` terminal
 terraform init
