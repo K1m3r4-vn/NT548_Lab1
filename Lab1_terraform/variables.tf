@@ -1,3 +1,3 @@
 variable "your_ip" {
-    default = "18.206.107.24/29"
+    default = "171.250.164.52/32"
 }

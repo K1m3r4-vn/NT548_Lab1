@@ -9,7 +9,7 @@ https://docs.github.com/en/repositories/creating-and-managing-repositories/cloni
 
 https://developer.hashicorp.com/terraform/install
 
-3. Thực hiện chỉnh sửa các giá trị access_key, private_key và your_ip ở file main.tf tương ứng với access key, private key của AWS và địa chỉ IP hiện tại của bạn :
+3. Thực hiện chỉnh sửa các giá trị access_key và private_key ở file main.tf tương ứng với access key và private key của AWS của bạn :
 
 ![alt text](image.png)
 
