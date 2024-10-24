@@ -5,7 +5,7 @@ resource "aws_security_group" "public_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["${var.your_ip}/32"]
+    cidr_blocks = [var.your_ip]
   }
 
   egress {
@@ -35,6 +35,7 @@ resource "aws_security_group" "private_sg" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
   tags = {
     Name = "Group 13 Private Security Group"
   }

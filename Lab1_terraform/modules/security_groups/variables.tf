@@ -1,4 +1,2 @@
-variable "your_ip" {
-  description = "Your Ip/32"
-}
+variable "your_ip" {}
 variable "vpc_id" {}

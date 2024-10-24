@@ -31,8 +31,6 @@ resource "aws_subnet" "private_subnet" {
 }
 resource "aws_default_security_group" "default_sg" {
    vpc_id = aws_vpc.my_vpc.id
-
-  
   ingress {
     protocol  = -1
     self      = true

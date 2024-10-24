@@ -24,13 +24,14 @@ module "route_table" {
 module "security_groups" {
   source = "./modules/security_groups"
   vpc_id = module.vpc.vpc_id
-  your_ip = "Your Ip address"#please fill here
+  your_ip = var.your_ip
 }
 
 module "ec2" {
   source           = "./modules/ec2"
-  ami              = "ami-087c17d1fe0178315"
+  ami              = "ami-0620fdc7d1d104444"
   instance_type    = "t2.micro"
+  key_name = "group13_keypair"
   public_sg     = module.security_groups.public_sg_id
   private_sg    = module.security_groups.private_sg_id
   public_subnet_id = module.vpc.public_subnet_id
