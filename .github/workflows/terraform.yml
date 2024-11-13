@@ -38,7 +38,7 @@ jobs:
 
       - name: Teraform Checkov
         working-directory: Lab1_terraform/Terraform
-        run: terraform -d
+        run: checkov -d
 
       - name: Initialize Terraform
         working-directory: Lab1_terraform/Terraform
