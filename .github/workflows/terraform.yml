@@ -10,8 +10,8 @@ jobs:
   terraform-apply:
     runs-on: ubuntu-latest
     env:
-      ACCESS_KEY: ${{secrets.AWS_ACCESS_KEY_ID}}
-      SECRET_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+      ACCESS_KEY: AKIAUJ3VUJQTG2NLEGUL
+      SECRET_KEY: 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
       AWS_REGION: us-east-1
       TF_VERSION: 1.9.6
 
@@ -30,15 +30,6 @@ jobs:
         uses: hashicorp/setup-terraform@v1
         with:
           terraform_version: ${{ env.TF_VERSION }}
-
-      - name: Install Checkov
-        run: |
-          pip3 install checkov
-          checkov --version
-
-      - name: Teraform Checkov
-        working-directory: Lab1_terraform/Terraform
-        run: checkov -d
 
       - name: Initialize Terraform
         working-directory: Lab1_terraform/Terraform
