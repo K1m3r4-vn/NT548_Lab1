@@ -31,13 +31,6 @@ jobs:
         with:
           terraform_version: ${{ env.TF_VERSION }}
 
-      - name: Install Checkov
-        run: |
-          pip3 install checkov
-          checkov --version
-
-
-
       - name: Initialize Terraform
         working-directory: Lab1_terraform/Terraform
         run: terraform init
