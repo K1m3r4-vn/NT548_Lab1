@@ -30,7 +30,6 @@ jobs:
         uses: hashicorp/setup-terraform@v1
         with:
           terraform_version: ${{ env.TF_VERSION }}
-
       - name: Initialize Terraform
         working-directory: Lab1_terraform/Terraform
         run: terraform init
