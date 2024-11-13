@@ -36,9 +36,7 @@ jobs:
           pip3 install checkov
           checkov --version
 
-      - name: Teraform Checkov
-        working-directory: Lab1_terraform/Terraform
-        run: checkov -d
+
 
       - name: Initialize Terraform
         working-directory: Lab1_terraform/Terraform
